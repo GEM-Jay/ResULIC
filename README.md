@@ -18,7 +18,7 @@
 
 <p align="center">
   <a href="https://njuvision.github.io/ResULIC/">🌐 Project Page</a> &ensp;
-  <a href="https://arxiv.org/abs/xxxx">📃 Paper</a> &ensp;
+  <a href="https://arxiv.org/abs/2505.08281">📃 Paper</a> &ensp;
 </p>
 
 <p align="center">
@@ -115,8 +115,8 @@
     ``` -->
 
 ## <a name="todo"></a>🌊 TODO
-- [√] Release code
-- [x] Release pretrained models (Coming soon)
+- [x] Release code
+- [ ] Release pretrained models (Coming soon)
 
 ## <a name="acknowledgement">❤ Acknowledgement
 This work is based on [ControlNet](https://github.com/lllyasviel/ControlNet), [ControlNet-XS](https://github.com/vislearn/ControlNet-XS), [DiffEIC](https://github.com/huai-chang/DiffEIC), and [ELIC](https://github.com/JiangWeibeta/ELIC), thanks to their invaluable contributions.
@@ -128,8 +128,9 @@ If you find our work useful, please consider citing:
 
 ```bibtex
 @inproceedings{Ke2025resulic,
-            author = {Ke, Anle and Zhang, Xu and Chen, Tong and Lu, Ming and Zhou, Chao and Gu, Jiawen and Ma, Zhan},
-            title = {Ultra Lowrate Image Compression with Semantic Residual Coding and Compression-aware Diffusion},
-            booktitle = {International Conference on Machine Learning},
-            year = {2025}}
+               author = {Ke, Anle and Zhang, Xu and Chen, Tong and Lu, Ming and Zhou, Chao and Gu, Jiawen and Ma, Zhan},
+               title = {Ultra Lowrate Image Compression with Semantic Residual Coding and Compression-aware Diffusion},
+               booktitle = {International Conference on Machine Learning},
+               year = {2025}
+               }
 ```
