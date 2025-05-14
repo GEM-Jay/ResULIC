@@ -1,10 +1,3 @@
-data:
-  target: dataset.data_module.DataModule
-  params:
-    # Path to training set configuration file.
-    train_config: ./configs/dataset/lic_train.yaml
-    # Path to validation set configuration file.
-    val_config: ./configs/dataset/lic_valid.yaml
 
 model:
   # You can set learning rate in the following configuration file.
