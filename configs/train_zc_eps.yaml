@@ -1,7 +1,7 @@
 
 model:
   # You can set learning rate in the following configuration file.
-  config: /workspace/test/DiffEIC/configs/model/cldm_eps/1_1_3/cldm_eps_200_ddpm.yaml
+  config: xx/cldm_eps/1_1_3/cldm_eps_200_ddpm.yaml
   # Path to the checkpoints or weights you want to resume. At the begining, 
   resume: ~
 
