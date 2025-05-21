@@ -5,7 +5,7 @@ from omegaconf import OmegaConf
 import torch
 from torchvision import transforms
 from dataset.data_LSDIR import MyDataset
-from dataset.data_Flicker import MyDataset2, MyDataset3, MyDataset4
+from dataset.data_Flicker import MyDataset2
 from torch.utils.data import ConcatDataset, DataLoader
 from utils.common import instantiate_from_config, load_state_dict
 
@@ -29,18 +29,17 @@ def main() -> None:
     # pl.seed_everything(config.lightning.seed, workers=True)
     
     train_transforms = transforms.Compose(
-            [transforms.CenterCrop(args.patch_size), transforms.ToTensor()]
-        )
-    
-    train_transforms2 = transforms.Compose(
-            [transforms.Resize(args.patch_size), transforms.ToTensor()]
-        )
+    [
+        transforms.Resize(512), 
+        transforms.CenterCrop(args.patch_size),  
+        transforms.ToTensor() 
+    ]
+    )
         
     dataset = MyDataset(train_transforms)
     dataset2 = MyDataset2(train_transforms)
-    dataset3 = MyDataset3(train_transforms2)
-    dataset4 = MyDataset4(train_transforms2)
-    dataset_con = ConcatDataset([dataset, dataset2, dataset3, dataset4])
+
+    dataset_con = ConcatDataset([dataset, dataset2])
     dataloader = DataLoader(dataset_con, num_workers=4, batch_size=args.batch_size, shuffle=True)
 
     model = instantiate_from_config(OmegaConf.load(config.model.config))

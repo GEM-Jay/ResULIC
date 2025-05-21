@@ -16,7 +16,7 @@ lightning:
     # Path to save logs and checkpoints.
     default_root_dir: ./logs2/1_1_3_add_xs_200_eps_ddpm
     # Max number of training steps (batches).
-    max_steps: 300001
+    max_steps: 100001
     # Validation frequency in terms of training steps.
     # val_check_interval: 5000
     log_every_n_steps: 100
