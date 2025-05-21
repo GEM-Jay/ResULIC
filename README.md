@@ -49,6 +49,8 @@
 
 ## <a name="train"></a>⏳ Train
 
+**Note:** The numbers in the yaml filenames (e.g., `1_1_1`) represent $\lambda_{\text{diffusion}}$, $\lambda_{\text{mse}}$, and $\lambda_{\text{bpp}}$ respectively.
+
 #### Stage 1: Initial Training
 
 1. **Download Pretrained Model**  
@@ -56,7 +58,7 @@
    ```bash
    wget https://huggingface.co/stabilityai/stable-diffusion-2-1-base/resolve/main/v2-1_512-ema-pruned.ckpt --no-check-certificate -P ./weight
 
-2. **Modify the configuration file**`./configs/train_zc_eps.yaml` and `./configs/model/cldm_eps/xx.yaml` accordingly.
+2. **Modify the configuration file**`./configs/train_zc_eps.yaml` and `./configs/model/stage1/xx.yaml` accordingly.
 
 3. Start training.
    ```
