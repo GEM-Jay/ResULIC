@@ -12,7 +12,7 @@ from utils.common import instantiate_from_config, load_state_dict
 os.environ['CUDA_VISIBLE_DEVICES'] = '4,5'
 def main() -> None:
     parser = ArgumentParser()
-    parser.add_argument("--config", type=str, default='/workspace/test/DiffEIC/configs/train_stage2.yaml')
+    parser.add_argument("--config", type=str, default='./configs/train_stage2.yaml')
     parser.add_argument(
         "--patch-size",
         type=int,
