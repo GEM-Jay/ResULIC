@@ -79,6 +79,8 @@
 
 -->
    
+**Note:** It is recommended to set "ddim_steps" to a number that is divisible by "add_steps". For example, when add_steps=600, ddim_steps could be 2, 3, 5...
+
 1. W/o Srr, W/o Pfo.
 
    ```
@@ -86,7 +88,7 @@
     --ckpt xx \
     --config /xx/xx.yaml \
     --output xx/ \
-    --ddim_steps x \
+    --ddim_steps 3 \
     --ddim_eta 0 \
     --Q x.0 \
     --add_steps x00
@@ -98,7 +100,7 @@
     --ckpt xx \
     --config /xx/xx.yaml \
     --output xx/ \
-    --ddim_steps x \
+    --ddim_steps 3 \
     --ddim_eta 0 \
     --Q x.0 \
     --add_steps x00
