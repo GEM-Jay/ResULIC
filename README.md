@@ -126,7 +126,7 @@
 ## <a name="todo"></a>🌊 TODO
 - [x] Release code
 - [x] Release quantitative metrics （👾The quantitative metrics for ResULIC presented in our paper can be found in [indicator](/indicator).）
-- [x] Release pretrained models (Coming soon)
+- [x] Release pretrained models
 
 ## <a name="acknowledgement">❤ Acknowledgement
 This work is based on [ControlNet](https://github.com/lllyasviel/ControlNet), [ControlNet-XS](https://github.com/vislearn/ControlNet-XS), [DiffEIC](https://github.com/huai-chang/DiffEIC), and [ELIC](https://github.com/JiangWeibeta/ELIC), thanks to their invaluable contributions.
