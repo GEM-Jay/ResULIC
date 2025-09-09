@@ -75,13 +75,13 @@
 
 ## <a name="inference"></a>😀 Inference
  
-Download the pre-trained models:
+1. Download the pre-trained models (We provide 3 low-bitrate models for testing, and other bitrate models can be trained by referring to the training method):
 
-    | Bitrate   | Link|
-    | --------- | ------------------ |
-    | 0.03 bpp  | [stage2/1_1_4/300](https://modelscope.cn/models/kangle/SRIC-6/resolve/master/step%3D84999.ckpt)|
-    | 0.01 bpp  | [stage2/1_1_12/400](https://modelscope.cn/models/kangle/ResULIC_add_steps400_0.09/resolve/master/step%3D199999.ckpt)|
-    | 0.002 bpp  | [stage2/1_1_24/600](https://modelscope.cn/models/kangle/ResULIC_add_steps600_0.0023/resolve/master/step%3D199999.ckpt)|
+    | Bitrate   | Link       |
+    | --------- | ---------- |
+    | 0.03 bpp  | [stage2/1_1_4/300](https://modelscope.cn/models/kangle/SRIC-6/resolve/master/step%3D84999.ckpt) |
+    | 0.01 bpp  | [stage2/1_1_12/400](https://modelscope.cn/models/kangle/ResULIC_add_steps400_0.09/resolve/master/step%3D199999.ckpt) |
+    | 0.002 bpp | [stage2/1_1_24/600](https://modelscope.cn/models/kangle/ResULIC_add_steps600_0.0023/resolve/master/step%3D199999.ckpt) |
 
    
 **Note:** It is recommended to set "ddim_steps" to a number that is divisible by "add_steps". For example, when add_steps=600, ddim_steps could be 2, 3, 5...
